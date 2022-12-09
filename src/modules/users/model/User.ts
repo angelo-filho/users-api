@@ -8,10 +8,7 @@ class User {
   created_at: Date;
   updated_at: Date;
 
-  constructor(name: string, email: string) {
-    this.name = name;
-    this.email = email;
-
+  constructor() {
     this.id = uuidV4();
     this.admin = false;
     this.created_at = new Date();
